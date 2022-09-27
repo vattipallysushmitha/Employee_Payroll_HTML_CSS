@@ -40,5 +40,12 @@ body{
 *{
     box-sizing: border-box;
 }
-  
-    
+
+.form-content{
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
