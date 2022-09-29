@@ -8,33 +8,56 @@
     <link rel="stylesheet" href="./UC3.css">
 </head>
 <body>
-    <header class="header-content header">
-        <div class="form-content">
-            <form class="form" action="#" 
-            onsubmit="save();return false">
-<div class="row-content">
-    <label class="label text" for="profile">Profile Image</label>
-    <div class="profile-radio-content">
-        <label>
-            <input type="radio" id="profile1" name="profile" value="/profile-images/Ellipse -1.png"
-                required>
-            <img class="profile" id="image1" src="/profile-images/Ellipse -1.png">
-        </label>
-        
-        <label>
-            <input type="radio" id="profile2" name="profile" value="./profile-images/Ellipse -3.png"
-                required>
-            <img class="profile" id="image2" src="./profile-images/Ellipse -3.png">
-        </label>
-        <label>
-            <input type="radio" id="profile3" name="profile" value="./profile-images/Ellipse -5.png"
-                required>
-            <img class="profile" id="image3" src="./profile-images/Ellipse -5.png">
-        </label>
-        <label>
-            <input type="radio" id="profile4" name="profile" value="./profile-images/Ellipse -7.png"
-                required>
-            <img class="profile" id="image4" src="./profile-images/Ellipse -7.png">
-        </label>
+    <header>
+        <div class="header-content header">
+            <div class ="logo-content">
+                <img src="/images/logo.png">
+                <div>
+                    <span class="emp-text">EMPLOYEE</span>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>    
+    </header>
+    <div class="form-content">
+        <form class="form" action="#">
+            <div class="form-head">
+                EMPLOYEE PAYROLL FORM
+            </div>
+            <div class="row-content">
+                <label class ="label text" for="name">NAME</label>
+                <input class = "input" type="txt" name="name" id="name" placeholder="your Name.." required> 
+                
+            </div>
+            <div class="row-content">
+            <label class="label text" for="profile">Profile Image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile"
+                        value="./profile-images/Ellipse -3.png" required>
+                        <img class="profie" id="image1" src="./profile-images/Ellipse -3.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile2" name="profile"
+                        value="./profile-images/Ellipse -5.png" required>
+                        <img class="profie" id="image2" src="./profile-images/Ellipse -5.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile3" name="profile"
+                        value="./profile-images/Ellipse -7.png" required>
+                        <img class="profie" id="image3" src="./profile-images/Ellipse -7.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile4" name="profile"
+                        value="./profile-images/Ellipse -9.png" required>
+                        <img class="profie" id="image4" src="./profile-images/Ellipse -9.png">
+                    </label>
+                </div>
+                </div>
+        </form> 
+
     </div>
-</div>
+</body>
+</html>     
