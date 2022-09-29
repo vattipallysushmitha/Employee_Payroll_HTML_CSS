@@ -8,43 +8,90 @@
     <link rel="stylesheet" href="./UC4.css">
 </head>
 <body>
-    <header class="header-content header">
-        <div class="form-content">
-            <form class="form" action="#" 
-            onsubmit="save();return false">
-<div class="row-content">
-    <label class="label text" for="gender">Gender</label>
-    <div>
-        <input type="radio" id="male" name="gender" value="male">
-        <label class="text" for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label class="text" for="female">Female</label>
-    </div>
-</div>
-<div class="row-content">
-    <label class="label text" for="department">Department</label>
-    <div>
-        <input type="checkbox" id="hr" name="hr" value="HR">
-        <label class="text" for="hr">HR</label>
-        <input type="checkbox" id="sales" name="sales" value="Sales">
-        <label class="text" for="sales">Sales</label>
-        <input type="checkbox" id="finance" name="finance" value="Finance">
-        <label class="text" for="finance">Finance</label>
-        <input type="checkbox" id="engineer" name="engineer" value="Engineer">
-        <label class="text" for="engineer">Engineer</label>
-        <input type="checkbox" id="others" name="others" value="Others">
-        <label class="text" for="others">Others</label>
-    </div>
-</div>
-<div class="row-content">
-    <label class="label text" for="salary">Salary</label>
-    <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
-        value="400000">
-    <output class="salary-output text" for="salary">400000</output>
-</div>
+    <header>
+        <div class="header-content header">
+            <div class ="logo-content">
+                <img src="/images/logo.png">
+                <div>
+                    <span class="emp-text">EMPLOYEE</span>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>    
+    </header>
+    <div class="form-content">
+        <form class="form" action="#">
+            <div class="form-head">
+                EMPLOYEE PAYROLL FORM
+            </div>
+            <div class="row-content">
+                <label class ="label text" for="name">NAME</label>
+                <input class = "input" type="txt" name="name" id="name" placeholder="your Name.." required> 
+                
+            </div>
+            <div class="row-content">
+            <label class="label text" for="profile">Profile Image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile"
+                        value="./profile-images/Ellipse -3.png" required>
+                        <img class="profie" id="image1" src="./profile-images/Ellipse -3.png">
+                    </label>
 
-</form>
-</div>
+                    <label>
+                        <input type="radio" id="profile2" name="profile"
+                        value="./profile-images/Ellipse -5.png" required>
+                        <img class="profie" id="image2" src="./profile-images/Ellipse -5.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile3" name="profile"
+                        value="./profile-images/Ellipse -7.png" required>
+                        <img class="profie" id="image3" src="./profile-images/Ellipse -7.png">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="profile4" name="profile"
+                        value="./profile-images/Ellipse -9.png" required>
+                        <img class="profie" id="image4" src="./profile-images/Ellipse -9.png">
+                    </label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="gender1" name="gender" value="male">
+                    <label class="text" for="male"> Male</label>
+
+                    <input type="radio" id="gender2" name="gender" value="female">
+                    <label class="text" for="female"> Female </label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class ="label text" for="department" >Department </label>
+                <div class="dept-radio-content">
+                    <input type="checkbox" id="hr" name="hr" value="hr">
+                    <label class="text" for="hr"> HR </label>
+
+                    <input type="checkbox" id="Sales" name="Sales" value="Sales">
+                    <label class="text" for="Sales"> Sales </label>
+
+                    <input type="checkbox" id="Finance" name="Finance" value="Finance">
+                    <label class="text" for="Finance"> Finance </label>
+
+                    <input type="checkbox" id="Engineer" name="Engineer" value="Engineer">
+                    <label class="text" for="Engineer"> Engineer </label>
+
+                    <input type="checkbox" id="Others" name="Others" value="Others">
+                    <label class="text" for="Others"> Others </label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="salary"> Choose Salary </label>
+                <input class="input" type="range" id="salary" name="salary" min="30000" max="50000" step="100" value="40000">
+                <output class="salary-output text" for="salary">40000</output>
+            </div>
+        </form> 
+
+    </div>
 </body>
-
-</html>
+</html>     
