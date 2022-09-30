@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./UC9.css">
+    <link rel="stylesheet" href="./UC10.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -15,14 +15,14 @@
         <div class="header-content header">
             <div class ="logo-content">
                 <img src="/images/logo.png">
-                <div>
+                <div> 
                     <span class="emp-text">EMPLOYEE</span>
                     <span class="emp-text emp-payroll">PAYROLL</span>
                 </div>
             </div>    
     </header>
     <div class="form-content">
-        <form class="form" action="#">
+        <form class="form" action="#" onsubmit="save()">
             <div class="form-head">
                 EMPLOYEE PAYROLL FORM
             </div>
@@ -158,7 +158,7 @@
                 </div>
     
                 <div class="buttonParent">
-                    <a href="./employeepayroll.js" class="button cancelButton">Cancel</a>
+                    <a href="./EmployeePayrollUI.html" class="button cancelButton">Cancel</a>
                     <div class="submit-reset">
                         <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                         <button type="reset" class="resetButton button">Reset</button>
@@ -168,6 +168,8 @@
             </form>
     
         </div>
+    
+        <script src="./employeepayroll.js"></script>
     
         <script>
             //change the range slider value
@@ -181,4 +183,4 @@
         </script>    
         
     </body>
-    </html>
+    </html>  
