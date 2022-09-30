@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./UC7.css">
+    <link rel="stylesheet" href="./UC9.css">
 </head>
 <body>
     
@@ -150,28 +151,34 @@
                         </select>
                     </div>
                 </div>
+    
                 <div class="row-content">
-                    <label class="label text" for="notes">Notes</label>
-                    <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
+                    <label for="notes" class="label text">Notes</label>
+                    <textarea name="notes" id="notes" class="input" style="height: 100px;"></textarea>
                 </div>
-
+    
                 <div class="buttonParent">
-                    <a href="/HTML/homeEmployeePayroll.html" class="resetButton button CancelButton">Cancel</a>
+                    <a href="./employeepayroll.js" class="button cancelButton">Cancel</a>
                     <div class="submit-reset">
-                        <button type="submit" class="button submitBtton" id="submitButton">Submit</button>
+                        <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                         <button type="reset" class="resetButton button">Reset</button>
                     </div>
                 </div>
-            </form> 
+    
+            </form>
+    
         </div>
+    
         <script>
-            const salary = document.querySelector('#salary');
-            const output = document.querySelector('.salary-output');
-           
-            output.textContent = salary.value;
-            salary.addEventListener('input',function(){
-            output.textContent=salary.value;
-            })
-        </script>
-</body>
-</html>     
+            //change the range slider value
+            const rangeVar = document.querySelector("#salary");
+            rangeVar.addEventListener("click", function(){
+                let rangeValue = document.getElementById("salary");
+                document.getElementById("salaryOutput").value = rangeValue.value;
+            });
+    
+            
+        </script>    
+        
+    </body>
+    </html>
